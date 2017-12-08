@@ -7,7 +7,7 @@ var nextSentence = ["Your", "mother", "was", "a", "hamster", "and", "your", "fat
 var addOnSent = ""
 
 // The addExcitement function should accept the array as the sole argument
-function addExcitement (theWordArray, symbol) {
+let addExcitement = (theWordArray, symbol) => {
     /*
       Write a `for` loop that iterates over the array argument and
       outputs the words.
@@ -17,22 +17,13 @@ function addExcitement (theWordArray, symbol) {
 
      for (i = 0; i < theWordArray.length; i++) {
      	addOnSent = addOnSent +' '+ theWordArray[i];
-
-
-
      	if ((i+1) % 3 === 0) {
-     			     	
 	     	exclams = exclams + symbol;
-
      		addOnSent = addOnSent + exclams;
      	}
-
-
-
      	console.log(addOnSent);
-
      }
-}
+};
 
 // Invoke the function and pass in the array
 addExcitement(sentence, '!');
